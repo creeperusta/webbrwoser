@@ -21,13 +21,14 @@ namespace webbrwoser
 
         private void Goadress_Click(object sender, EventArgs e)
         {
-            webView1.Url = ("www." + Gotoadresse.Text + ".com");
-
+            webView.Url = ("www." + Gotoadresse.Text + ".com");
+            webView.Url = (httpsadress.Text);
         }
+
 
         private void find_Click(object sender, EventArgs e)
         {
-            webView1.Url = ("https://www.google.com/search?q=" + Gotoadresse.Text);
+            webView.Url = ("https://www.google.com/search?q=" + Gotoadresse.Text);
         }
     }
 }

@@ -32,8 +32,10 @@
             this.Gotoadresse = new System.Windows.Forms.TextBox();
             this.Goadress = new System.Windows.Forms.Button();
             this.webControl1 = new EO.WinForm.WebControl();
-            this.webView1 = new EO.WebBrowser.WebView();
+            this.webView = new EO.WebBrowser.WebView();
             this.find = new System.Windows.Forms.Button();
+            this.httpsadress = new System.Windows.Forms.TextBox();
+            this.https = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Adress
@@ -75,11 +77,11 @@
             this.webControl1.Size = new System.Drawing.Size(776, 375);
             this.webControl1.TabIndex = 6;
             this.webControl1.Text = "webControl1";
-            this.webControl1.WebView = this.webView1;
+            this.webControl1.WebView = this.webView;
             // 
-            // webView1
+            // webView
             // 
-            this.webView1.DisableInputMsgRouting = false;
+            this.webView.DisableInputMsgRouting = false;
             // 
             // find
             // 
@@ -91,12 +93,31 @@
             this.find.UseVisualStyleBackColor = true;
             this.find.Click += new System.EventHandler(this.find_Click);
             // 
+            // httpsadress
+            // 
+            this.httpsadress.Location = new System.Drawing.Point(74, 37);
+            this.httpsadress.Name = "httpsadress";
+            this.httpsadress.Size = new System.Drawing.Size(335, 20);
+            this.httpsadress.TabIndex = 8;
+            // 
+            // https
+            // 
+            this.https.AutoSize = true;
+            this.https.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.https.Location = new System.Drawing.Point(18, 41);
+            this.https.Name = "https";
+            this.https.Size = new System.Drawing.Size(38, 16);
+            this.https.TabIndex = 9;
+            this.https.Text = "https:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.https);
+            this.Controls.Add(this.httpsadress);
             this.Controls.Add(this.find);
             this.Controls.Add(this.webControl1);
             this.Controls.Add(this.Goadress);
@@ -115,8 +136,10 @@
         private System.Windows.Forms.TextBox Gotoadresse;
         private System.Windows.Forms.Button Goadress;
         private EO.WinForm.WebControl webControl1;
-        private EO.WebBrowser.WebView webView1;
+        private EO.WebBrowser.WebView webView;
         private System.Windows.Forms.Button find;
+        private System.Windows.Forms.TextBox httpsadress;
+        private System.Windows.Forms.Label https;
     }
 }
 
