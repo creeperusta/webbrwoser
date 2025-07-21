@@ -37,6 +37,9 @@
             this.httpsadress = new System.Windows.Forms.TextBox();
             this.https = new System.Windows.Forms.Label();
             this.closebutton = new System.Windows.Forms.Button();
+            this.Bigbutton = new System.Windows.Forms.Button();
+            this.small = new System.Windows.Forms.Button();
+            this.Normal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Adress
@@ -75,7 +78,7 @@
             this.webControl1.BackColor = System.Drawing.Color.White;
             this.webControl1.Location = new System.Drawing.Point(3, 74);
             this.webControl1.Name = "webControl1";
-            this.webControl1.Size = new System.Drawing.Size(820, 375);
+            this.webControl1.Size = new System.Drawing.Size(855, 418);
             this.webControl1.TabIndex = 6;
             this.webControl1.Text = "webControl1";
             this.webControl1.WebView = this.webView;
@@ -114,9 +117,10 @@
             // closebutton
             // 
             this.closebutton.BackColor = System.Drawing.Color.Snow;
+            this.closebutton.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.closebutton.DialogResult = System.Windows.Forms.DialogResult.Abort;
             this.closebutton.ForeColor = System.Drawing.Color.Red;
-            this.closebutton.Location = new System.Drawing.Point(765, 2);
+            this.closebutton.Location = new System.Drawing.Point(811, 3);
             this.closebutton.Name = "closebutton";
             this.closebutton.Size = new System.Drawing.Size(67, 22);
             this.closebutton.TabIndex = 10;
@@ -126,12 +130,61 @@
             this.closebutton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.closebutton_KeyDown);
             this.closebutton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.closebutton_KeyUp);
             // 
+            // Bigbutton
+            // 
+            this.Bigbutton.BackColor = System.Drawing.Color.Snow;
+            this.Bigbutton.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Bigbutton.DialogResult = System.Windows.Forms.DialogResult.Abort;
+            this.Bigbutton.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.Bigbutton.Location = new System.Drawing.Point(738, 3);
+            this.Bigbutton.Name = "Bigbutton";
+            this.Bigbutton.Size = new System.Drawing.Size(67, 22);
+            this.Bigbutton.TabIndex = 11;
+            this.Bigbutton.Text = "B";
+            this.Bigbutton.UseVisualStyleBackColor = false;
+            this.Bigbutton.Click += new System.EventHandler(this.Bigbutton_Click);
+            this.Bigbutton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Bigbutton_MouseDown);
+            this.Bigbutton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Bigbutton_MouseDown);
+            // 
+            // small
+            // 
+            this.small.BackColor = System.Drawing.Color.Snow;
+            this.small.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.small.DialogResult = System.Windows.Forms.DialogResult.Abort;
+            this.small.ForeColor = System.Drawing.Color.Lime;
+            this.small.Location = new System.Drawing.Point(592, 3);
+            this.small.Name = "small";
+            this.small.Size = new System.Drawing.Size(67, 22);
+            this.small.TabIndex = 12;
+            this.small.Text = "---";
+            this.small.UseVisualStyleBackColor = false;
+            this.small.Click += new System.EventHandler(this.small_Click);
+            // 
+            // Normal
+            // 
+            this.Normal.BackColor = System.Drawing.Color.Snow;
+            this.Normal.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Normal.DialogResult = System.Windows.Forms.DialogResult.Abort;
+            this.Normal.ForeColor = System.Drawing.Color.Yellow;
+            this.Normal.Location = new System.Drawing.Point(665, 3);
+            this.Normal.Name = "Normal";
+            this.Normal.Size = new System.Drawing.Size(67, 22);
+            this.Normal.TabIndex = 13;
+            this.Normal.Text = "N";
+            this.Normal.UseVisualStyleBackColor = false;
+            this.Normal.Click += new System.EventHandler(this.normal_Click);
+            this.Normal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.normal_MouseDown);
+            this.Normal.MouseUp += new System.Windows.Forms.MouseEventHandler(this.normal_MouseUp);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Coral;
-            this.ClientSize = new System.Drawing.Size(844, 450);
+            this.ClientSize = new System.Drawing.Size(879, 493);
+            this.Controls.Add(this.Normal);
+            this.Controls.Add(this.small);
+            this.Controls.Add(this.Bigbutton);
             this.Controls.Add(this.closebutton);
             this.Controls.Add(this.https);
             this.Controls.Add(this.httpsadress);
@@ -159,6 +212,9 @@
         private System.Windows.Forms.TextBox httpsadress;
         private System.Windows.Forms.Label https;
         private System.Windows.Forms.Button closebutton;
+        private System.Windows.Forms.Button Bigbutton;
+        private System.Windows.Forms.Button small;
+        private System.Windows.Forms.Button Normal;
     }
 }
 

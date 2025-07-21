@@ -49,5 +49,53 @@ namespace webbrwoser
             closebutton.BackColor = Color.White;
             closebutton.ForeColor = Color.Red;
         }
+
+        private void Bigbutton_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+        }
+
+
+        private void Bigbutton_MouseDown(object sender, MouseEventArgs e)
+        {
+            Bigbutton.BackColor = Color.Blue;
+            Bigbutton.ForeColor = Color.White;
+        }
+
+        private void Bigbutton_MouseUp(object sender, MouseEventArgs e)
+        {
+            Bigbutton.BackColor = Color.White;
+            Bigbutton.ForeColor = Color.Blue;
+        }
+
+        private void small_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+        private void small_MouseDown(object sender, MouseEventArgs e)
+        {
+            small.BackColor = Color.Lime;
+            small.ForeColor = Color.White;
+        }
+        private void small_MouseUp(object sender, MouseEventArgs e)
+        {
+            small.BackColor = Color.White;
+            small.ForeColor = Color.Lime;
+        }
+
+        private void normal_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Normal;
+        }
+        private void normal_MouseDown(object sender, MouseEventArgs e)
+        {
+            Normal.BackColor = Color.Yellow;
+            Normal.ForeColor = Color.White;
+        }
+        private void normal_MouseUp(object sender, MouseEventArgs e)
+        {
+            Normal.BackColor = Color.Red;
+            Normal.ForeColor = Color.Yellow;
+        }
     }
 }
